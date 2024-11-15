@@ -1,0 +1,386 @@
+/* GLOBALS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container {
+    width: 100%;
+  }
+
+  /* HEADER */
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #logo {
+    padding: 10px;
+    background-color: #009688;
+    color: white;
+    width: 10%;
+    font-size: 20px;
+    align-items: center;
+  }
+  #logo i{
+    margin-right: 8px;
+  }
+  #header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 90%;
+    padding: 5px;
+  }
+  #nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: start;
+    align-items: center;
+  }
+  .nav-list-item{
+    padding: 8px;
+  }
+  .nav-list-item a{
+    text-decoration: none;
+    color: white;
+  }
+  .nav-list-item a:visited{
+    text-decoration: none;
+    color: grey;
+  }
+  .nav-list-item a:hover{
+    text-decoration: none;
+    color: red;
+  }
+  #search{
+    margin-right: 6px;
+  }
+
+   /* PAGE IMAGE */
+
+   #page-image{
+    min-height: 500px;
+    max-height: 600px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #page-image img{
+    vertical-align: middle;
+    min-height: 350px;
+    max-height: 600px;
+    width: 100%;
+  }
+
+  /* TEAMS */
+
+  #team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+   }
+   #team h2, #pricing h2{
+    margin: 16px auto;
+   }
+  #team p, #pricing p{
+    margin: 18px auto;
+  }
+  #team-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+    width: 15%;
+  }
+  .card img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+
+  /* WORKS */
+        
+  #works{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 16px;
+    background-color: #333333;
+    color: white;
+}
+.work-card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    color: #333333;
+    margin: 10px;
+}
+#work-text{
+    background-color: #333333;
+    color: white;
+}
+.work-card img{
+    width: 100%;
+}
+.card-text{
+    padding: 10px;
+}
+.card-text h3, .card-text h4, .card-text ul{
+    margin-bottom: 10px;
+}
+#work-list{
+    list-style-type: none;
+}
+.work-list-item{
+    padding-bottom: 10px;
+}
+
+ /* PRICING */
+
+ #pricing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+#products{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  border: 1px solid silver;
+  margin: 0 16px;
+}
+.product:hover{
+  box-shadow: 3px 3px 3px red, -3px -3px 3px grey, 3px -3px 3px grey, -3px 3px 3px grey;
+}
+.product h3, .product p, .product div{
+  margin-bottom: 16px;
+}
+.product div:last-child{
+  margin-bottom: 0;
+}
+.product h3{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+.product ul{
+  list-style-type: none;
+  width: 100%;
+}
+.product ul li{
+  padding: 16px;
+  border-bottom: 1px solid silver;
+  text-align: center;
+  width: 100%;
+}
+#pro h3{
+  background-color: grey;
+}
+.price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.price p{
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.button-box{
+  width: 100%;
+  padding: 16px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.sign-up{
+  padding: 16px;
+  background-color: #009688;
+  color: white;
+  border: 1px solid #009688;
+}
+
+/* CONTACT */
+
+#contact{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+ }
+ #contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 40%;
+ }
+ #contact-header{
+  border-bottom: 1px solid #009688;
+  margin-bottom: 16px;
+ }
+ #contact-title, #contact-text{
+  margin-bottom: 16px;
+ }
+ #contact-list{
+  list-style-type: none;
+ }
+ .contact-list-item{
+  padding: 16px 0;
+ }
+ .contact-list-item i{
+  color: #009688;
+  margin-right: 16px;
+ }
+ #contact-form{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background-color: white;
+  padding: 16px;
+ }
+ .form-control{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+ }
+ .form-control input{
+  padding: 6px;
+  margin-top: 6px;
+  border: none;
+  border-bottom: 1px solid silver;
+ }
+ #button-check{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+ #send-button{
+  background-color: black;
+  color: white;
+  padding: 10px;
+ }
+
+  /* MAP */
+
+  #map{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+#map img{
+    width: 100%;
+    height: auto;
+}
+
+ /* FOOTER */
+
+ #footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 16px;
+ }
+ #footer ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+ }
+ #footer ul li{
+  padding: 10px;
+  margin: 19px 3px;
+  background-color: #009688;
+  color: white;
+ }
+
+ /* Responsive Design */
+
+ @media screen and (min-width: 600px) {
+    #logo{
+      padding: 15px 8px;
+      font-size: 12px;
+    }
+    #logo i{
+      margin: 1px;
+      font-size: 10px;
+    }
+    #team-cards{
+      flex-direction: column;
+    }
+    .card{
+      width: 50%;
+      padding: 1px;
+    }
+
+    #works{
+      flex-direction: column;
+      align-items: center;
+  }
+  .work-card{
+      width: 100%;
+  }
+
+  #products{
+    flex-direction: column;
+  }
+  .product{
+    width: 100%;
+  }
+
+  #contact{
+    flex-direction: column;
+   }
+   #contact-info{
+    width: 100%;
+   }
+
+   #contact-form{
+    width: 100%;
+    box-shadow: 10px 10px 10px grey;
+   }
+ }
